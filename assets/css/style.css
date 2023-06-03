@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rokkitt:wght@100;200;400;700&display=swap');
+@font-face {
+    font-family: "jungleLand";
+    src: url("../fonts/JungleLand.ttf");
+}
+
+:root{
+    --color-primary: #25272c;
+    --color-secondary: #FF0088;
+    --color-terciario: #28e98c;
+    --color-cuarto: #9869D4;
+    --blanco: #fff;
+    --negro: #000;
+    --fuente-primaria: 'jungleLand', sans-serif;
+    --fuente-secundaria: 'Rokkitt', serif;
+}
+body{
+    background-color: var(--color-primary);
+    width: 100%;
+    
+}
+#present{
+    position: fixed;
+}
+.row{
+    width: 100%!important;
+    margin: 0;
+}
+.hv{
+    position: relative;
+    border: 1px solid var(--blanco);
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--blanco);
+}
+.hv p{
+    line-height: 16px;
+    font-size: 1rem;
+    margin: 0;
+}
+.hv h2{
+    font-size: 2rem;
+}
+.hv .copy p{
+    font-size: .8rem;
+}
+.icon-p{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 5px;
+    transition: all ease 1s;
+}
+.icon-p:hover{
+    background-color:var(--color-secondary);
+}
+.btn-secondary{
+    background-color: var(--color-secondary);
+}
+.btn-secondary:hover{
+    background-color: #ed7b79;
+}
+.h-100{
+    min-height: 97vh;
+    
+}
+p.icon{
+    position: absolute;
+    left: -25px;
+    top: 80px;
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 50%;
+    animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    width: auto;
+  }
+  .card p{
+    font-size: 1.5rem;
+  }
+  .color-terciario{
+    color: var(--color-terciario);
+  }
+  #exp{
+    justify-content: flex-start;
+    display: flex;
+  }
+  h1, h2{
+    font-family:  'jungleLand', sans-serif;
+    color: var(--color-terciario);
+  }
+  p{
+    font-family: 'Rokkitt', serif;
+    font-weight: 100;
+  }
+  .h-100{
+    position: relative;
+    min-height: 98vh;
+    display: flex;
+    align-items: center;
+  }
+  #about, #resume{
+    position: relative;
+    left: 40%;
+  }
+  .btn-secundario{
+    background-color: transparent;
+    color: var(--blanco);
+    border: 1px solid var(--color-secondary);
+    position: absolute;
+    top: 130px;
+  }
+  .btn-primario{
+    background-color: transparent;
+    color: var(--blanco);
+    
+    position: absolute;
+    bottom: 170px;
+    right: 100px;
+  }
+  .btn-secundario span{
+    margin-left: 10px;
+  }
+ 
+  
+  /*exp*/
+  #resume{
+    padding-top: 5rem;
+  }
+  #exp ul {
+    margin: 0;
+    list-style: none;
+    position: relative;
+    padding: 1px 100px;
+    color: #fff;
+    font-size: 13px;
+  }
+  #exp ul:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    border-left: 2px dashed #fff;
+  }
+  #exp ul li {
+    position: relative;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 14px;
+    border-radius: 6px;
+    width: 250px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+  }
+  #exp ul li:not(:first-child) {
+    margin-top: 60px;
+  }
+  #exp ul li > span {
+    width: 2px;
+    height: 100%;
+    background: var(--color-secondary);
+    left: -30px;
+    top: 0;
+    position: absolute;
+  }
+  #exp ul li > span:before, #exp ul li > span:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    background: var(--color-terciario);
+    left: -10px;
+    top: 0;
+  }
+  #exp ul li span:after {
+    top: 100%;
+  }
+  #exp ul li > div {
+    margin-left: 10px;
+  }
+  #exp div .title, #exp div .type {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  #exp div .info {
+    font-weight: 300;
+  }
+  #exp div > div {
+    margin-top: 5px;
+  }
+  #exp span.number {
+    height: 100%;
+  }
+  #exp span.number span {
+    position: absolute;
+    font-size: 1.5rem;
+    left: -60px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-family: var(--fuente-primaria)
+  }
+  #exp span.number span.text{
+    left: -100px;
+  }
+  #exp span.number span:first-child {
+    top: -10px;
+  }
+  #exp span.number span:last-child {
+    top: 90%;
+  }
